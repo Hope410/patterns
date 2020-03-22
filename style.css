@@ -1,0 +1,13 @@
+.canvas-container {
+	display: flex;
+	justify-content: center;
+}
+
+.inputs {
+	display: flex;
+	justify-content: center;
+}
+
+canvas {
+	border: 1px solid;
+}

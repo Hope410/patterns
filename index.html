@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>узоры</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.min.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div class="inputs">
+			<select v-model="mapConfig.groupType">
+				<option 
+					v-for="(type, i) in groupTypes"
+					:key="i"
+					:value="type"
+				>
+					{{ type }}
+				</option>
+			</select>
+		</div>
+		<div class="canvas-container">
+			<canvas/>
+		</div>
+	</div>
+	<script src="classes.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
